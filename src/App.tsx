@@ -13,7 +13,7 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 
 export default defineConfig({
-  base: "/nome-do-repositorio-no-github/", // <-- MUITO IMPORTANTE!
+  base: "/imoveis", // <-- MUITO IMPORTANTE!
   plugins: [react()],
   resolve: {
     alias: {
