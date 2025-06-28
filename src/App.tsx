@@ -1,23 +1,29 @@
-export default function App() {
-  return (
-    <div className="h-screen bg-green-600 text-white flex items-center justify-center text-3xl">
-      Hello World com Tailwind!
-    </div>
-  );
-}
+// App.tsx
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+// 👇 TROQUE DE VOLTA PARA BROWSERROUTER
+import { BrowserRouter, Routes, Route } from "react-router-dom"; 
+import Index from "./pages/index";
+import NotFound from "./pages/NotFound";
 
-// 8. Adiciona Vite config com base para GitHub Pages
-// vite.config.ts
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react-swc';
-import path from 'path';
+const queryClient = new QueryClient();
 
-export default defineConfig({
-  base: "/imoveis", // <-- MUITO IMPORTANTE!
-  plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"),
-    },
-  },
-});
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      {/* 👇 USE BROWSERROUTER COM O BASENAME CORRETO */}
+      <BrowserRouter basename="/imoveis">
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;
