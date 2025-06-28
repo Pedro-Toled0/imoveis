@@ -2,6 +2,8 @@ import React from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Phone, Mail } from 'lucide-react';
+// 1. A imagem do QR Code é importada aqui
+import qrCodeZap from '../assets/imagens/QrCodeZAP.png';
 
 const ContactSection = () => {
   const openWhatsApp = () => {
@@ -106,7 +108,8 @@ const ContactSection = () => {
                 <Card className="p-8 text-center">
                   {/* A tag <img> substitui o div anterior */}
                   <img 
-                    src="/imagens/QrCodeZAP.png" 
+                    // 2. A variável importada é usada aqui
+                    src={qrCodeZap} 
                     alt="QR Code para contato de Pedro de Toledo" 
                     className="w-48 h-48 rounded-lg mb-4 mx-auto"
                   />

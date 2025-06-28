@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
+// 1. A imagem é importada aqui
+import pedroFoto from '../assets/imagens/PedroFoto.png';
 
 const AboutSection = () => {
   return (
@@ -12,7 +14,8 @@ const AboutSection = () => {
               <div className="w-80 h-80 rounded-2xl bg-gradient-to-br from-real-estate-blue to-blue-700 p-1">
               <div className="w-full h-full rounded-2xl bg-real-estate-light-gray flex items-center justify-center overflow-hidden">
                 <img
-                src="/imagens/PedroFoto.png"
+                // 2. A variável importada é usada aqui
+                src={pedroFoto}
                 alt="Foto do especialista"
                 className="object-cover w-full h-full rounded-2xl"
                 />
