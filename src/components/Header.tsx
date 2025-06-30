@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <nav className="flex justify-between items-center">
           <div className="text-xl font-bold text-real-estate-blue">
-            Pedro Toledo
+            Pedro de Toledo
           </div>
           <div className="hidden md:flex space-x-6">
             <button 

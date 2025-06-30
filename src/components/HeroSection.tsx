@@ -27,7 +27,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed opacity-90">
-            Por <strong>Pedro Natal Paes de Toledo</strong>, perito avaliador credenciado pelo 
+            Por <strong>Pedro de Toledo</strong>, corretor e avaliador de imóveis credenciado pelo 
             <span className="text-real-estate-gold font-semibold"> CRECISP</span> e 
             <span className="text-real-estate-gold font-semibold"> CNAI</span>.
           </p>

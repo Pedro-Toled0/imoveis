@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="text-center space-y-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
             <p className="text-sm opacity-90">
-              © 2025 - Pedro Natal Paes de Toledo - Avaliação de Imóveis
+              © 2025 - Pedro de Toledo - Avaliação de Imóveis
             </p>
             <p className="text-sm opacity-90">
               Todos os direitos reservados.

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
 // 1. A imagem é importada aqui
-import pedroFoto from '../assets/imagens/PedroFoto.png';
+import pedroFoto from '../assets/imagens/PedroFoto.jpg';
 
 const AboutSection = () => {
   return (
@@ -73,11 +73,23 @@ const AboutSection = () => {
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 bg-real-estate-gold rounded-full"></span>
-                  Processos de partilha e inventário
+                  Vistorias imobiliárias
+                </li>
+                  <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 bg-real-estate-gold rounded-full"></span>
+                  Due diligence Imobiliária
                 </li>
                 <li className="flex items-center gap-3">
                   <span className="w-2 h-2 bg-real-estate-gold rounded-full"></span>
-                  Laudos técnicos especializados
+                  Consultoria Imobiliária
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 bg-real-estate-gold rounded-full"></span>
+                  Contratos Imobiliários
+                </li>
+                <li className="flex items-center gap-3">
+                  <span className="w-2 h-2 bg-real-estate-gold rounded-full"></span>
+                  Conectagem e Intermediações de Imóveis
                 </li>
               </ul>
             </div>
